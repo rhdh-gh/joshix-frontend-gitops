@@ -1,0 +1,15 @@
+app:
+  name: joshix-poi-map-app
+  namespace: joshix
+  cluster: .apps.rosa-x4jc7.l07n.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-gh/joshix-frontend
+  org: rhdh-gh
+  name: joshix-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: joshix/poi-map-app
+  tag: latest
